@@ -1,0 +1,24 @@
+﻿<Window x:Class="Image2ASCii.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Image2ASCii"
+        mc:Ignorable="d"
+        Title="Settings" Height="250" Width="400" MaxHeight="250" MaxWidth="400" MinHeight="250" MinWidth="400" ResizeMode="NoResize" StateChanged="Window_StateChanged" Closed="Window_Closed">
+    <Grid>
+        <Label Content="垂直分割区块大小（像素）" HorizontalAlignment="Left" Margin="20,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RowSize" Margin="0,23,20,0" TextWrapping="Wrap" Text="10" HorizontalAlignment="Right" Width="150" Height="23" VerticalAlignment="Top"/>
+        <Label Content="水平分割区块大小（像素）" HorizontalAlignment="Left" Margin="20,62,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ColSize" Height="23" Margin="0,62,20,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" HorizontalAlignment="Right" Width="150"/>
+        <Label Content="*注2:推荐水平分割区块大小为垂直分割区块大小的一半左右" HorizontalAlignment="Left" Margin="20,101,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="ThreadLabel" Content="最大线程数" HorizontalAlignment="Left" Margin="20,156,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ThreadSize" Height="23" Margin="0,156,20,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" HorizontalAlignment="Right" Width="150"/>
+        <Label Content="*注1:分割区块大小影响到生成速度以及成品的分辨率" HorizontalAlignment="Left" Margin="20,85,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label Content="允许使用多线程" HorizontalAlignment="Left" Margin="20,126,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="check" IsChecked="True" HorizontalAlignment="Left" Margin="356,130,0,0" VerticalAlignment="Top" Height="15" Width="15" Click="check_Click" />
+        <Label Content="输出区字体大小(sp)" HorizontalAlignment="Left" Margin="20,186,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FontSize" Height="23" Margin="224,188,20,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
